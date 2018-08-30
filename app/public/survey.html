@@ -26,7 +26,8 @@
             <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
                 crossorigin="anonymous">
 
-            <!-- <link rel="stylesheet" href="/app/public/style.css"> -->
+            <link rel="stylesheet" type="text/css" href="style.css">
+
 
         </head>
 
@@ -196,11 +197,26 @@
                     </select>
                 </div>
                 <button class="btn btn-primary" type="submit" id="submitBtn">Find your match!</button>
+
+                <div class="modal">
+                    <div class="modal-content">
+                        <h4>Closest Friend Match</h4>
+
+                        <h5 id="userMatch"></h5>
+                        <span class="close">&times;</span>
+                        <p class="modal-text"></p>
+
+                    </div>
+
+                </div>
             </div>
 
 
 
+
+
             <script>
+
                 var answersArray = [];
 
                 $("#submitBtn").on("click", function (event) {
@@ -220,22 +236,30 @@
                     $.post("/api/friends", newProfile,
                         function (data) {
 
-                            // If a table is available... tell user they are booked.
-                            if (data) {
-                                alert("Yay! You are officially booked!");
-                            }
-
-                            // If a table is available... tell user they on the waiting list.
-                            else {
-                                alert("Sorry you are on the wait list");
-                            }
-
-
-
+                            $('#userMatch').html(data.matchName);
+                            $("#userMatchImage").attr("src", data.matchImage);
+                            $(".modal").show();
                         });
-                });
-            </script>
 
+                });
+
+                $(document).keydown(function (e) {
+                    if (e.keyCode == 27) {
+                        $("#inputName").val("");
+                        $(".modal").hide();
+                        $(".custom-select").val("0");
+                        answersArray = [];
+                    }
+                });
+                //close the modal if the x is clicked on
+                $("body").on("click", ".close", function () {
+                    $("#inputName").val("");
+                    $(".modal").hide();
+                    $(".custom-select").val("0");
+                    answersArray = [];
+                });
+
+            </script>
         </body>
 
         </html>
