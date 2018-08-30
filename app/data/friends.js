@@ -1,7 +1,7 @@
 var friendsArray = [
     {
-        "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Noah Syndergaard",
+        "photo": "https://pixel.nymag.com/imgs/fashion/daily/2017/05/01/baseball-hair/baseball-hair-04.w710.h473.jpg",
         "scores": [
             5,
             1,
@@ -16,8 +16,8 @@ var friendsArray = [
         ]
     },
     {
-        "name": "Michael",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Mariano Rivera",
+        "photo": "https://www.thoughtco.com/thmb/Sjznr1GlX8kRTu2FmQI6qIrxp9A=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/470808585-56a069c43df78cafdaa182ae.jpg",
         "scores": [
             2,
             3,
@@ -32,8 +32,8 @@ var friendsArray = [
         ]
     },
     {
-        "name": "Jacob",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Babe Ruth",
+        "photo": "https://www.famousbirthdays.com/faces/ruth-babe-image.jpg",
         "scores": [
             5,
             1,
@@ -48,8 +48,8 @@ var friendsArray = [
         ]
     },
     {
-        "name": "Zak",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Jose Bautista",
+        "photo": "https://www.thefamouspeople.com/profiles/thumbs/jos-bautista.jpg",
         "scores": [
             1,
             5,
@@ -64,8 +64,8 @@ var friendsArray = [
         ]
     },
     {
-        "name": "Max",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Albert Pujols",
+        "photo": "https://www.thefamouspeople.com/profiles/thumbs/albert-pujols.jpg",
         "scores": [
             5,
             1,

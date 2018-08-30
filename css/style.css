@@ -14,14 +14,14 @@
 
 .modal-content {
     position: relative;
-    top: 38%;
+    top: 28%;
     color:black;
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 20%;
-    height: 200px;
+    width: 30%;
+    height: 400px;
 }
 
 .modal-content p {
